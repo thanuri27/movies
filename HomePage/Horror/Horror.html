@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Horror</title>
+
+	<style>
+ 		@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&family=Poppins:wght@400;500;600;700&family=Roboto&family=Tektur:wght@700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700;900&display=swap');
+		* {
+			padding: 0px;
+			margin: 0;
+			position: relative;
+		}
+		body {
+			background: url(back.jpg) no-repeat;
+			background-size:2000px;
+
+		}
+		header{
+			background: rgba(0, 0, 0, 0.7);
+			box-shadow: 0px 2px 8px 4px #000;
+			padding: 10px 20px;
+			position: fixed;
+			width: 100%;
+			z-index: 100;
+			display: flex;
+			align-items:center;
+
+		}
+		.logo img{
+			width: 150px;
+			height: auto;
+
+		}
+		.navbar{
+			margin-right: auto;
+			margin-left:auto;
+		}
+		.navbar ul{
+			list-style: 0;
+			margin: 0;
+			padding: 0;
+		}
+		.navbar ul li{
+			display: inline-block;
+			padding-right: 30px;
+			padding-left: 30px;
+
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			font-family: 'Poppins', sans-serif;
+			color: white;
+			border-radius: 3px;
+			padding: 15px;
+			font-size: 20px;
+		}
+
+		a.active,a:hover{
+			background-color: red;
+			box-shadow: 0px 2px 20px 4px #9c0b19;
+			transition: .4s;
+		}
+
+		h1{
+			text-align: center;
+			font-family: 'Philosopher', sans-serif;
+			font-family: 'Poppins', sans-serif;
+			font-family: 'Roboto', sans-serif;
+			font-family: 'Tektur', cursive;
+		}
+		p{
+			text-align: left;
+			font-size: 20px;
+
+		}
+		li{
+			font-size: 20px;
+		}
+		body{
+			background-color: black;
+			color: white;
+		}
+		
+
+
+
+		.main{
+			padding-top: 170px;
+			padding-bottom: 10px;
+			background-image: url(intes1.jpg);
+			color: white;
+			height: 500px ;
+		}
+
+		.heading{
+			
+			justify-content: center;
+			column-count: 2;
+			column-gap: 20px;
+			font-size: 70px;
+
+		}
+		.heading:hover{
+			color: red;
+		}
+		h3{
+			font-family: 'Philosopher', sans-serif;
+			font-family: 'Poppins', sans-serif;
+			font-family: 'Roboto', sans-serif;
+			font-family: 'Tektur', cursive;
+			padding-top: 10px;
+			padding-bottom: 15px;
+
+		}
+		
+		.mainp{
+			padding-top: 230px;
+			font-family: 'Philosopher', sans-serif;
+			font-family: 'Poppins', sans-serif;
+			font-family: 'Roboto', sans-serif;
+			font-family: 'Tektur', cursive;
+		}
+
+		.img-gall{
+			padding-top: 10px;
+			padding-bottom:10px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: none;
+		}
+
+		.img-gall img{
+			overflow: hidden;
+			display: inline-block;
+			width: 350px;
+			padding: 6px;
+			height: 200px;
+			border-radius: 20px;
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		.img1:hover{
+			transform: scale(1.2);
+		}
+		.img2:hover{
+			transform: scale(1.2);
+		}
+		.img3:hover{
+			transform: scale(1.2);
+		}
+		.img4:hover{
+			transform: scale(1.2);
+		}
+		.img5{
+			height:auto ;
+			width: 100%;
+		}
+
+		.paras p{
+			padding-top: 50px;
+			text-align: center;
+			font-family: 'Poppins', sans-serif;
+			line-height: 30px;
+		}
+
+		.gif{
+			padding-top: 50px;
+			width:100%;
+			height: 100vh;
+		}
+
+		.gif:hover{
+			cursor: pointer;
+		}
+
+		.bottomh{
+			justify-content: center;
+			background-color: black;
+			
+		}
+		.creater{
+			padding-top: 60px;
+			padding-left: 10px;
+		}
+
+		.blogo{
+			width: 130px;
+			height: 60px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+
+		}
+		.img-gall img:hover{
+			background-color: red;
+			box-shadow: 0px 2px 40px 4px #d4172a;
+			border-radius: 5px;
+			transition: .4s;
+		}
+		.img-gall a:hover {
+			box-shadow: 0px 2px 40px 4px #000000;
+			background-color: black;
+			border: black;
+		}
+		.img-gall a{
+			text-decoration: none;
+		}
+		.contrainer{
+			background-color: black;
+			box-shadow: 0px 2px 10px 4px #000;
+		}
+
+		.footer{
+			text-align: center;
+			background-color: black;
+			padding-top: 50px;
+			padding-bottom: 50px
+		}	
+	</style>
+<body>
+	<header>
+		<div class = "logo">
+			<img src = "logo.png">
+		</div>	
+		<div class = "navbar">
+			<ul>
+			    <li class="list1"><a class="active" href="../HomePage.html"><b>Home</b></a></li>
+			    <li><a href="../../CommentForm/FormPage.html"><b>Comments</b></a></li>
+			    <li><a href="../../Shop/Shop.html"><b>Shop</b></a></li>
+			    <li><a href="../../QuizPage/Quiz.html"><b>Quiz</b></a></li>
+			    <li><a href="../../SiteMap/Sitemap.html"><b>Site Map</b></a></li>
+			    <li><a href="../../Gallery/Gallery.html"><b>Gallery</b></a></li>
+			    <li><a href="../../AboutUs/AboutUs.html"><b>About us</b></a></li>
+			</ul>
+		</div>	
+	</header>
+	
+
+	<div class="main">
+		<div class="heading">
+			<h1 class="head">Horror Movies</h1>
+			<p class="mainp">Horror is a genre of storytelling intended to scare, shock, and thrill its audience.</p>
+		</div>
+		
+	</div>
+
+	<div class="contrainer">	
+		<h3 align="center">Click Movie Icons To Go To Their Info</h3>
+		<div class="img-gall">
+		<a href="https://www.imdb.com/title/tt13345606/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_evil%2520dead%2520" target="_blank"><img src="EvilDeadRise.jpg" alt="Evil Dead Rise" class="img1"></a>
+		<a href="https://www.imdb.com/title/tt5814060/?ref_=tt_sims_tt_i_7" target="_blank"><img src="TheNun.jpg" alt="The Nun" class="img2"></a>
+		<a href="https://www.imdb.com/title/tt1457767/?ref_=fn_rvi_tt_i_4" target="_blank"><img src="Conjuring.jpg" alt="The Conjuring" class="img3"></a>
+		<a href="https://www.imdb.com/title/tt3322940/?ref_=fn_al_tt_1" target="_blank"><img src="Annabelle.jpg" alt="Annabelle" class="img4"></a>
+	</div>
+
+		<div class="paras">
+			<p>Horror films go back as far as the onset of films themselves, over a 100 years ago.
+		    From our earliest days, we use our vivid imaginations to see ghosts in shadowy shapes, to be emotionally connected to the unknown and to fear things that are improbable. 
+			Watching a horror film gives an opening into that scary world, into an outlet for the essence of fear itself, without actually being in danger. 
+			Weird as it sounds, there's a very real thrill and fun factor in being scared or watching disturbing, horrific images.
+				<br>
+				<br>
+
+			</p>
+		</div>	
+	</div>
+	
+	<a href="https://www.imdb.com/title/tt3322940/?ref_=fn_al_tt_1" target="_blank">
+		<img src="Annabelle.gif" alt="animated gif" class="gif">
+	</a>
+
+	<div class="footer">
+		<a href="../mainpage/AboutUs/PageEditor_3.html"><h2>Page editor-Dinushi Wanniarchchi</h2>
+		
+	</div>
+
+
+	
+
+
+</body>
+</html>

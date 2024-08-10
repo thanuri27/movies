@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>moviesworld</title>
+  <link rel="stylesheet" type="text/css" href="presentation_page.css">
+  <style>
+
+    body {
+      width: 99%;
+      height: 500pxvh; /* Set the body height to 100vh (viewport height) to occupy the full screen */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      background: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 79%)), url(bac.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column; /* Make the body a flex container with a column layout */
+      justify-content: space-between; /* Push the header and footer to the top and bottom of the container */
+    }
+
+    .heading {
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      padding-top: 30px;
+      text-align: center;
+      font-size: 90px;
+      color: red;
+      font-weight: bold;
+      transition: padding-top 0.4s, border 0.4s; /* Add transition properties for padding-top and border */
+    }
+
+    .logo {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      height: auto;
+      width: 130px;
+      padding-top: 50px;
+    }
+
+    p {
+      font-family: 'Philosopher', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      padding-top: -20px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    p:hover{
+      color: red;
+    }
+
+    .footer {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: black;
+      color: whitesmoke;
+      font-size: 15px;
+      flex-shrink: 0; /* Prevent the footer from shrinking when there's little content */
+    }
+
+    .names{
+      padding-bottom: 70px;
+
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <img src="logo.png" class="logo" align="center">
+  <h1 class="heading"><u>MoviesWorld</u></h1>
+
+<div class="names">
+  <br>
+  <p>Rithil Withanage</p>
+  <p>Sathruwan Cooray</p>
+  <p>Dinushi Wanniarachchi</p>
+  <p>Thanuri Thamarandini</p>
+
+</div>
+  
+
+  <div class="footer">
+    <a href="aboutme.html" target="blank"><h2>Page Editor - Rithil Withanage</h2></a>
+  </div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "../HomePage/HomePage.html";
+    }, 4000);
+  </script>
+
+
+</body>
+</html>

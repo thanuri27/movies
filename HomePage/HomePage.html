@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage for movies</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700;900&display=swap');
+		* {
+			padding: 0px;
+			margin: 0;
+			position: relative;
+		}
+		body {
+			background: url(homePageBackground.jpg) no-repeat;
+			background-size:cover ;
+			height: 100px;
+		}
+		header{
+			background: rgba(0, 0, 0, 0.7);
+			box-shadow: 0px 2px 8px 4px #000;
+			padding: 10px 20px;
+			position: fixed;
+			width: 100%;
+			z-index: 1000000;
+			display: flex;
+			align-items:center;
+
+		}
+		.logo img{
+			width: 150px;
+			height: auto;
+
+		}
+		.navbar{
+			margin-right: auto;
+			margin-left:auto;
+		}
+		.navbar ul{
+			list-style: 0;
+			margin: 0;
+			padding: 0;
+		}
+		.navbar ul li{
+			display: inline-block;
+			padding-right: 30px;
+			padding-left: 30px;
+
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			font-family: 'Poppins', sans-serif;
+			color: white;
+			border-radius: 3px;
+			padding: 15px;
+			font-size: 20px;
+		}
+
+		a.active,a:hover{
+			background-color: red;
+			box-shadow: 0px 2px 20px 4px #9c0b19;
+			transition: .4s;
+		}
+		.mainText {
+			font-size: 100px;
+			padding-top: 60px;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+			text-align: center;
+			position: fixed;
+			left: 50%;
+			top: 30%;
+			transform: translate(-50%, -50%);
+		}
+		.mainText:hover{
+			color: red;
+			str
+			transition: .4s;
+		}
+		.container{
+			width: 100%;
+			height: 1020px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			box-shadow: 0px 2px 10px 4px #000;
+			top: 600px;
+			background-color: #010101;
+		}
+		.container h1{
+			padding-top: 20px;
+			text-align: center;
+			font-size: 50px;
+			font-family:'Poppins', sans-serif;
+			color: white;
+		}
+		.container img {
+			margin-top: 40px;
+			margin-right: 70px;
+			margin-left: 120px;
+			width: auto;
+			height: 300px;
+			padding: 6px;
+
+		}
+		.container img:hover{
+			background-color: red;
+			box-shadow: 0px 2px 40px 4px #d4172a;
+			border-radius: 5px;
+			transition: .4s;
+		}
+
+		.footer {
+			margin-top: 600px;
+			height: 50px;
+			width: 100%;
+			background-color: red;
+			position: absolute;
+			z-index: 0;
+		}
+
+		.footer{
+			text-align: center;
+			background-color: darkred;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			font-family:'Poppins', sans-serif ;
+
+		}
+		.zoom:hover {
+			transform: scale(1.1);	
+		}
+		.zoom{
+			transition: 0.2s;	
+		}
+		.container p {
+			padding-top: 15px;
+		}
+		.container a{
+			 text-decoration: none;		
+		}
+		.container a:hover{
+			box-shadow: 0px 2px 40px 4px #000000;
+			background-color: black;
+			border: black;
+		}
+		.container-grid{
+			display: grid;
+			grid-template-columns: auto auto;
+			background-color: black;
+			padding: 10px;
+		}
+		.griditem{
+			align-content: center;
+			text-align: center;
+			color: white;
+			font-size: 2rem;
+			font-family:'Poppins', sans-serif ;
+
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<header>
+		<div class = "logo">
+			<img src = "logo.png">
+		</div>	
+		<div class = "navbar">
+			<ul>
+              <li class="list1"><a class="active"href = "../HomePage/HomePage.html"><b>Home</b></a></li>
+              <li><a href = "../CommentForm/FormPage.html"><b>Comments</b></a></li>
+              <li><a href = "../Shop/Shop.html"><b>Shop</b></a></li>
+              <li><a href = "../QuizPage/Quiz.html"><b>Quiz</b></a></li>
+              <li><a href = "../SiteMap/Sitemap.html"><b>Site Map</b></a></li>
+              <li><a href = "../Gallery/Gallery.html"><b>Gallery</b></a></li>
+              <li><a  href = "../AboutUs/AboutUs.html"><b>About us</b></a></li>
+            </ul>
+		</div>	
+	</header>
+	<h1 class="mainText">Welcome to MoviesWorld</h1>
+	<div class="container">
+		<h1>Movie Categories</h1>
+		<div class="container-grid">
+			<div class="griditem">
+				<a href="Action/Action.html">
+					<img class="zoom" src="Action.jpg" alt="Category1">
+				</a>
+				<p>Action Movies</p> 
+			</div>
+  			<div class="griditem">
+  				<a class = "floatright" href="Sci-fi/Sci-fi.html">
+					<img class="zoom" src="Scifi.png" alt="Category2" >	
+				</a>
+				<p>Sci-fi Movies</p>
+  			</div>
+  			<div class="griditem">
+  				<a href="Thriller/Thriller.html">
+					<img class="zoom" src="Thriller.jpg" alt="Category1" >
+				</a>
+				<p>Thriller Movies</p>
+  			</div>  
+  			<div class="griditem">
+  				<a href="Horror/Horror.html">
+					<img class="zoom" src="Horror.jpg" alt="Category2" >
+				</a>
+				<p>Horror Movies</p>
+  			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="../AboutUs/PageEditor_2.html"><h2>Page editor-Sathruwan Cooray</h2>
+	</div>
+
+</body>
+</html>

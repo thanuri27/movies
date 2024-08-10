@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+	
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<header>
+        <div class = "logo">
+            <img src = "logo.png">
+        </div>  
+        <div class = "navbar">
+            <ul>
+              <li class="list1"><a href = "../HomePage/HomePage.html"><b>Home</b></a></li>
+              <li><a href = "../CommentForm/FormPage.html"><b>Comments</b></a></li>
+              <li><a href = "../Shop/Shop.html"><b>Shop</b></a></li>
+              <li><a href = "../QuizPage/Quiz.html"><b>Quiz</b></a></li>
+              <li><a href = "../SiteMap/Sitemap.html"><b>Site Map</b></a></li>
+              <li><a class="active" href = "../Gallery/Gallery.html"><b>Gallery</b></a></li>
+              <li><a  href = "../AboutUs/AboutUs.html"><b>About us</b></a></li>
+            </ul>
+        </div>  
+</header>
+	
+<br><br><br><br><br>
+	
+<!-- dropdown for background color  -->
+    <div class="selection">
+        <select id="selectcolorid">
+            <option value="" selected disabled hidden> --Select Background Color--</option>
+            <option value="#FF0000">Red</option>
+            <option value="#FFA500">Orange</option>
+            <option value="#A020F0">Purple</option>
+            <option value="#00BFFF">Blue</option>
+            <option value="#000000">Black</option>
+            <option value="">none</option>
+        </select>
+        <!-- created button for switch color -->
+        <button class="glow-on-hover" onclick="changecolor()">Switch The color</button>
+
+        <!-- created button for random button -->
+        <button class="random">  <span> Random </span> </button>
+       
+        
+        
+        <!-- created font size buttons -->
+        <button class="btn1">A-</button>
+        <button class="btn2">A</button>
+        <button class="btn3">A+</button>
+    </div>
+
+    
+    <br> <br> <br> <br>
+    <div class="container" id="main-container">
+        
+        <div class="left-text">
+            <h1 class="heading">Movies 2023</h1>
+            <p class="subheading">IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the newest movie and TV shows.
+</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" style="background-image: url(Winnie-the-Pooh.jpg);" data-description="Winnie-the-Pooh: Blood and Honey is a 2023 British independent slasher film written, directed, and produced by Rhys Frake-Waterfield.This was released in the United States on 15 February 2023. The film was grossed $5.2 million." onmouseover="delayShowImage(this)">Winnie-the-Pooh </div>
+            <div class="box col-2" style="background-image: url(Extraction-2.webp);" data-description=" Extraction 2 is a 2023 American action thriller film directed by Sam Hargrave and written by Joe Russo, based on the graphic novel Ciudad.Extraction 2 was released by Netflix on 16 June 2023." onmouseover="delayShowImage(this)" >Extraction 2</div>
+            <div class="box" style="background-image: url(Myfault.jpg);" data-description="My fault is a 2023 Spanish romance film directed by Domingo González in his directorial feature length debut and starring Nicole Wallace and Gabriel Guevara.The film debuted on Amazon Prime Video on 8 June 2023." onmouseover="delayShowImage(this)" >My Fault</div>
+            <div class="box row-2" style="background-image: url(gaurdiansofthegalaxy.jpg);" data-description="This is a 2023 American superhero film based on the Marvel Comics superhero team Guardians of the Galaxy, produced by Marvel Studios, was released in the United States on May 5.It was a critical and commercial success, grossing over $842 million worldwide." onmouseover="delayShowImage(this)">Guardians of the Galaxy Vol.3</div>
+            <div class="box col-2" style="background-image: url(transformers.jpg);" data-description="Transformers:Rise of the Beasts is a 2023 American science fiction action film based on Hasbro's Transformers toy line, and primarily influenced by the Beast Wars storyline. It is the seventh installment in the Transformers live-action film series.this was released in the United States on June 9, 2023. The film has currently grossed $421 million worldwide against a production budget of $195–200 million." onmouseover="delayShowImage(this)">Transformers</div>
+        </div>
+
+    </div>
+    
+    <!-- create image overlay -->
+    <div id="overlay">
+        <div id="full-image-container">
+          <!-- creates  close  button -->
+            <div class="close-button">&#10005;</div>
+            <img id="full-image" alt="full">
+            <p id="full-image-description"></p>
+        </div>
+    </div>
+     <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <hr> 
+    <footer>
+    <p>Page Editor: <a href="../Aboutus/PageEditor_4.html"><span> Thanuri Thamaradini</span></a></p>
+    <p>Copyright &copy; 2023 MoviesWorld| All Rights Reserved. </p>
+    <p>Last Updated: 17/07/2023</p>
+  </foter>
+	  <script src="gallery.js"></script>
+</body>
+</html>
